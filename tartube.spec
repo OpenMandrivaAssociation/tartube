@@ -1,24 +1,34 @@
 Name:		tartube
-Version:	2.3.042
+Version:	2.3.085
 Release:	1
 Summary:	GUI for youtube-dl
 License:	GPLv3
 Group:		Video/Players
 Url:		https://github.com/axcore/tartube
 Source0:	https://github.com/axcore/tartube/archive/v%{version}/%{name}-%{version}.tar.gz
-Patch0:		tartube-2.1.0-no-pgi-and-playsound-modules.patch
+
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(setuptools)
 BuildRequires:	python3dist(twodict)
 BuildRequires:	python3dist(wxpython)
+BuildRequires:  python3dist(moviepy)
+BuildRequires:  python3dist(requests)
+BuildRequires:  python3dist(pip)
+BuildRequires:  python3dist(feedparser)
 
 Requires:	python3dist(wxpython)
 Requires:	python3dist(twodict)
+Requires:	python3dist(moviepy)
+Requires: python3dist(requests)
+Requires: python3dist(pip)
+Requires: python3dist(feedparser)
+Requires: python3dist(playsound)
+Requires: python3dist(matplotlib)
+Requires: aria2
+Requires:	atomicparsley
+Requires:	ffmpeg
 Requires:	youtube-dl
-Recommends:	atomicparsley
-Recommends:	ffmpeg
-Recommends:	python-moviepy
 
 %description
 A front-end GUI for the popular youtube-dl written in wxPython.
