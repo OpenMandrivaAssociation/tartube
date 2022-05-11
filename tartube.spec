@@ -75,5 +75,5 @@ EOF
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/tartube/
 %{python_sitelib}/tartube/
-#{python_sitelib}/tartube-%{version}-py*.*.egg-info/
+%{python_sitelib}/tartube-*-py*.*.egg-info
 %{_mandir}/man1/*
