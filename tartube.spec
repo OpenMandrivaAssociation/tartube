@@ -1,5 +1,5 @@
 Name:		tartube
-Version:	2.4.065
+Version:	2.4.077
 Release:	1
 Summary:	GUI for youtube-dl
 License:	GPLv3
@@ -16,6 +16,7 @@ BuildRequires:  python3dist(moviepy)
 BuildRequires:  python3dist(requests)
 BuildRequires:  python3dist(pip)
 BuildRequires:  python3dist(feedparser)
+BuildRequires: glibc-static-devel
 
 #Requires:	python3dist(wxpython)
 Requires:	python3dist(twodict)
