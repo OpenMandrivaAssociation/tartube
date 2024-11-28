@@ -1,5 +1,5 @@
 Name:		tartube
-Version:	2.5.040
+Version:	2.5.059
 Release:	1
 Summary:	GUI for youtube-dl
 License:	GPLv3
