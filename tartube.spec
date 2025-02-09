@@ -80,4 +80,4 @@ EOF
 %{python_sitelib}/tartube/
 %{python_sitelib}/tartube-*-py*.*.egg-info
 %{_mandir}/man1/*
-%lang %{_datadir}/locale/*/LC_MESSAGES/tartube.po
+%{_datadir}/locale/*/LC_MESSAGES/tartube.po
