@@ -47,6 +47,8 @@ export TARTUBE_PKG_STRICT=1
 %install
 %py_install
 
+%find_lang %{name}
+
 # (tv) fix installation (& thus startup):
 mkdir -p %{buildroot}%{_datadir}/tartube/
 mv %{buildroot}/tartube %{buildroot}%{_datadir}/
@@ -70,7 +72,7 @@ Type=Application
 Categories=Audio;Video;AudioVideo;
 EOF
 
-%files
+%files -f %{name}.lang
 %doc CHANGES README.rst
 %license LICENSE
 %{_bindir}/%{name}
