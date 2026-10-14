@@ -44,6 +44,9 @@ export TARTUBE_PKG_STRICT=1
 %py_build
 
 %install
+# setup.py install re-reads the environment. %build and %install are
+# separate shells, so the strict path has to be set again here.
+export TARTUBE_PKG_STRICT=1
 %py_install
 
 %files
