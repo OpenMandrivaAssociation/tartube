@@ -48,6 +48,8 @@ export TARTUBE_PKG_STRICT=1
 # separate shells, so the strict path has to be set again here.
 export TARTUBE_PKG_STRICT=1
 %py_install
+# setup.py also copies the gettext sources into the locale directory.
+rm -f %{buildroot}%{_datadir}/locale/*/LC_MESSAGES/*.po
 
 %files
 %doc CHANGES README.rst
